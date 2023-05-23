@@ -20,3 +20,10 @@ Just exploring Go!!!
     - variables which starts with **capital letter** are public variables and can be accessed outside that module.
     - if value is not provided, string type has no value, bool has false, int has 0 as garbage values.
     - check 02variables code for some examples
+5. Packages and Comma ok syntax
+    - [go packages](https://pkg.go.dev/) can be found here.
+    - bufio -> provides a number of functions and types that can be used to implement buffered I/O.
+    - os -> provides a platform-independent interface to operating system functionality.
+    - In the context of the Go programming language, buffering refers to the practice of storing data in a temporary location before it is read or written to a file or other input/output (I/O) device. This can help to improve performance by reducing the number of times that the I/O device needs to be accessed.
+    - os.Stdin is a variable. This variable is a pointer to a *os.File object, which we can use to read data from the standard input stream.
+    - comma ok idiom, just a fancy name in my opinion -> similar to variables mapping `result,ok = func()` type of ok depends on of the return type from the right hand sider.
