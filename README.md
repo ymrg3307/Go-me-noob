@@ -27,3 +27,9 @@ Just exploring Go!!!
     - In the context of the Go programming language, buffering refers to the practice of storing data in a temporary location before it is read or written to a file or other input/output (I/O) device. This can help to improve performance by reducing the number of times that the I/O device needs to be accessed.
     - os.Stdin is a variable. This variable is a pointer to a *os.File object, which we can use to read data from the standard input stream.
     - comma ok idiom, just a fancy name in my opinion -> similar to variables mapping `result,ok = func()` type of ok depends on of the return type from the right hand sider.
+6. Type Conversions
+    - strconv -> library that helps in conversions to and from string representations of basic data types.
+7. Time handling
+    - check available [default time format strings and how to make a custom format](https://pkg.go.dev/time#Layout)
+    - It's important to remember that time formatting is very different in go, **always check documentation before handling time**.
+    - check **05mytime** code for some example
