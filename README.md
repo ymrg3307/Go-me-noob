@@ -1,4 +1,5 @@
 # Go-me-noob
+
 Just exploring Go!!!
 
 1. Installation
@@ -32,4 +33,9 @@ Just exploring Go!!!
 7. Time handling
     - check available [default time format strings and how to make a custom format](https://pkg.go.dev/time#Layout)
     - It's important to remember that time formatting is very different in go, **always check documentation before handling time**.
-    - check **05mytime** code for some example
+    - check **05mytime** code for some examples
+8. Build for different OS
+   - `go env` -> gives list of environment variables.
+   - **GOOS** -> contains the the current environment OS.
+   - `go build` -> builds a executable file.
+   - GOOS="[OS]" go build -> build to a different OS from the current OS.
