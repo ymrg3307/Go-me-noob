@@ -39,3 +39,21 @@ Just exploring Go!!!
    - **GOOS** -> contains the the current environment OS.
    - `go build` -> builds a executable file.
    - GOOS="[OS]" go build -> build to a different OS from the current OS.
+9. Memory Management
+    - Memory management is automatic.
+    - new()
+      - memory is allocated but no initialization
+      - we will get a memory address
+      - zeroed storage
+    - make()
+      - memory is allocated and will be initialized
+      - we will get a memory address
+      - non zeroed storage
+    - Garbage collection happens is automatic when something is out of scope or value is nil
+    - [runtime package](https://pkg.go.dev/runtime) -> contains operations that interact with Go's runtime system
+10. Pointers
+    - A pointer holds the memory addressof a value
+    - **&** operator generates a pointer
+    - **\*** denotes the pointer's underlying value
+    - using pointers we can referance and modify the values directly
+    - check pointers module for basic example on how to declare and use pointers
