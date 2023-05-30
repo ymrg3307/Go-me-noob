@@ -52,8 +52,15 @@ Just exploring Go!!!
     - Garbage collection happens is automatic when something is out of scope or value is nil
     - [runtime package](https://pkg.go.dev/runtime) -> contains operations that interact with Go's runtime system
 10. Pointers
-    - A pointer holds the memory addressof a value
+    - A pointer holds the memory address of a value
+    - default value is nil for pointers
     - **&** operator generates a pointer
     - **\*** denotes the pointer's underlying value
     - using pointers we can referance and modify the values directly
     - check pointers module for basic example on how to declare and use pointers
+11. Arrays
+    - Not much used in Golang
+    - We should define the size of array explicitely
+    - len() will give the complete size of array not the actual number of values present inside.
+    - all the array elements are initialized with the zero value of the corresponding array type like '' for string, 0 for int etc.,
+    - check array module for some examples.
