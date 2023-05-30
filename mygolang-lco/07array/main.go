@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var fruitList []string
+	var fruitList [3]string
 	fruitList[0] = "mango"
 	fruitList[2] = "apple"
 
