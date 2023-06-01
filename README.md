@@ -64,9 +64,13 @@ Just exploring Go!!!
     - len() will give the complete size of array not the actual number of values present inside.
     - all the array elements are initialized with the zero value of the corresponding array type like '' for string, 0 for int etc.,
     - check array module for some examples.
-
 12. Slices
     - FOUND THESE TO BE TRICKY
     - Comeback and read [slices intro](https://go.dev/blog/slices-intro) and [mechanics of append](https://go.dev/blog/slices) to gain indepth understanding.
     - What I observed is imagine an array in background, slices are in foreground. When you change something array gets update but slices holds the referance to the specific part we are slicing. Observe the last code block of fruitList -> WTH!!! replaced 'Peach' because the previous **fruitList** referance is [:2] so new append adds content after index 1 (as max index is exclusive)
     - **sort** package provides utilities for sorting slices and more.
+    - Look at slices module to know how to delete an element at a specific indexes.
+13. Maps
+    - stores values as key value pairs
+    - map[KeyType]ValueType{} or make(map[KeyType]ValueType)-> declaring a map
+    - delete(\<mapname>,\<keyvalue>) -> delete key from map

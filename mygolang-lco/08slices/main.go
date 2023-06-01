@@ -34,4 +34,10 @@ func main() {
 	sort.Ints(highScores)
 	fmt.Println(highScores)
 	fmt.Println(sort.IntsAreSorted(highScores))
+
+	var courses = []string{"c++", "c", "JS", "c#", "python"}
+	fmt.Println(courses)
+	var index int = 2
+	courses = append(courses[:index], courses[index+1:]...)
+	fmt.Println(courses)
 }
