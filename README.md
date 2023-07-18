@@ -74,3 +74,8 @@ Just exploring Go!!!
     - stores values as key value pairs
     - map[KeyType]ValueType{} or make(map[KeyType]ValueType)-> declaring a map
     - delete(\<mapname>,\<keyvalue>) -> delete key from map
+    - [A blog on maps](https://go.dev/blog/maps)
+14. Structs
+    - Typed collections of fields, useful for grouping data together to form records.
+    - Generally structs and it's fields are capitalized, as we export and use them outiside of that package.
+    - Dot notation is used to access fields
